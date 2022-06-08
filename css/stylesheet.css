@@ -37,6 +37,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    background-color: #E5E5E5;
 }
 
 
@@ -109,4 +110,32 @@ select {
 
 
 /* Main styles for projects */
+
+/* Header */
+
+header .bg-light {
+    --bs-bg-opacity: 0;
+}
+
+header .nav-link {
+    font-size: 13px;
+    color: #17181A;
+    margin-top: 3px;
+}
+
+.header .header__list-language {
+    font-weight: 400;
+    font-size: 13px;
+    color: #17181A;
+}
+
+.header__language li {
+    margin-top: 4px;
+}
+
+header .container-xl:last-child {
+    background-color: white;
+    position: relative;
+    box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
+}
 
