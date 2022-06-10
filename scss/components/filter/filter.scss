@@ -7,6 +7,12 @@
   .accordion-item {
     border: none;
   }
+  .accordion-button {
+    margin-top: -10px;
+  }
+  &__clean-all {
+    margin-right: 20px;
+  }
   .accordion-button:focus {
     border: 0;
   }
@@ -16,13 +22,22 @@
   .card-text {
     font-size: 12px;
     color: #515151;
+    margin-left: 5px;
   }
+
   .card-body a {
     font-size: 12px;
     color: #EB5757;
     svg {
       margin-bottom: 5px;
     }
+  }
 
+  &__product-quantity {
+    color: #BDBDBE;
+  }
+
+  &__line-divided {
+    opacity: 0.1;
   }
 }

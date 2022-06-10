@@ -88,13 +88,13 @@ input:focus {
 }
 
 .accordion-button:not(.collapsed)::after {
-  margin-top: 5px;
   background-image: url("../../assets/icons/chevron-up.svg");
   background-size: 60%;
   transform: none;
 }
 
 .accordion-button::after {
+  background-image: url("../../assets/icons/chevron-down.svg");
   background-size: 60%;
 }
 
@@ -272,12 +272,19 @@ a:hover {
 .filter .accordion-item {
   border: none;
 }
+.filter .accordion-button {
+  margin-top: -10px;
+}
+.filter__clean-all {
+  margin-right: 20px;
+}
 .filter .accordion-button:focus {
   border: 0;
 }
 .filter .card-text {
   font-size: 12px;
   color: #515151;
+  margin-left: 5px;
 }
 .filter .card-body a {
   font-size: 12px;
@@ -285,6 +292,12 @@ a:hover {
 }
 .filter .card-body a svg {
   margin-bottom: 5px;
+}
+.filter__product-quantity {
+  color: #BDBDBE;
+}
+.filter__line-divided {
+  opacity: 0.1;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

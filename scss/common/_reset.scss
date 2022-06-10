@@ -95,13 +95,13 @@ input:focus {
 }
 
 .accordion-button:not(.collapsed)::after {
-  margin-top: 5px;
   background-image: url("../../assets/icons/chevron-up.svg");
   background-size: 60%;
   transform: none;
 
 }
 .accordion-button::after {
+  background-image: url("../../assets/icons/chevron-down.svg");
   background-size: 60%;
 }
 
