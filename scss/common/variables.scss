@@ -4,6 +4,7 @@
   --bs-link-color: black;
 
 
+
 }
 
 .navbar {
@@ -11,13 +12,21 @@
   --bs-navbar-color: black;
 }
 
+.dropdown {
+  --bs-btn-bg: white;
+}
 
 
+
+
+
+$breadcrumb-divider: quote(">");
 
 $font-md: 15px;
 $font-sm: 13px;
 $font-family-main: "Lato", sans-serif;
 $font-weight-main: 400;
+$font-weight-reg: 700;
 $main-bg: #F4F4F4;
 $accent-color: #99C63C;
 

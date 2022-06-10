@@ -78,6 +78,13 @@ select {
   font: inherit;
 }
 
+textarea:focus,
+input:active,
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   * {
