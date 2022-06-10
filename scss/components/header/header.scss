@@ -1,0 +1,49 @@
+.header {
+
+  box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
+
+  &__top {
+    background-color: $main-bg;
+    font-size: $font-sm;
+    padding: 5px 0;
+  }
+
+  &__lang-switcher {
+    button,
+    .dropdown-item {
+      font-size: $font-sm;
+    }
+
+  }
+
+  &__icons-top {
+    margin-right: 8px;
+  }
+
+  &__search-wrapper {
+    margin-right: 60px;
+  }
+
+  &__seacrh {
+    font-size: 16px;
+    padding-left: 0;
+    padding-right: 65px;
+  }
+
+  &__navigation {
+    .nav-item {
+
+      &:not(:first-child) {
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+
+  &__auth {
+    gap: 16px;
+  }
+
+}

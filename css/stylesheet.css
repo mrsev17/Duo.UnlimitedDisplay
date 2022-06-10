@@ -1,18 +1,25 @@
-
-/* Connect reset CSS */
-
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 ul[class],
 ol[class] {
-    padding: 0;
+  padding: 0;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
 
 body,
 h1,
@@ -28,114 +35,124 @@ figcaption,
 blockquote,
 dl,
 dd {
-    margin: 0;
+  margin: 0;
 }
-
 
 body {
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-    background-color: #E5E5E5;
+  min-height: 100vh;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  text-rendering: optimizespeed;
 }
-
 
 ul[class],
 ol[class] {
-    list-style: none;
+  list-style: none;
 }
-
 
 a:not([class]) {
-    text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
-
 
 img {
-    max-width: 100%;
-    display: block;
+  display: block;
+  max-width: 100%;
 }
-
 
 article > * + * {
-    margin-top: 1em;
+  margin-top: 1em;
 }
-
 
 input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
-
 
 @media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+:root {
+  --bs-link-color: black;
 }
 
-/*============== */
+.navbar {
+  --bs-navbar-brand-margin-end: 45px;
+  --bs-navbar-color: black;
+}
 
-/* Connect fonts */
+body {
+  font-size: 15px;
+  font-weight: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #99C63C;
+  transition: 0.4s;
+}
+
+:root {
+  --bs-link-color: black;
+}
+
+.navbar {
+  --bs-navbar-brand-margin-end: 45px;
+  --bs-navbar-color: black;
+}
 
 @font-face {
-    font-family: 'Lato';
-    src: local('Lato Bold'), local('Lato-Bold'),
-    url('../fonts/Lato-Bold.woff2') format('woff2'),
-    url('../fonts/Lato-Bold.woff') format('woff'),
-    url('../fonts/Lato-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Lato";
+  src: local("Lato Bold"), local("Lato-Bold"), url("../../fonts/Lato-Bold.woff2") format("woff2"), url("../../fonts/Lato-Bold.woff") format("woff"), url("../../fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
-
 @font-face {
-    font-family: 'Lato';
-    src: local('Lato Regular'), local('Lato-Regular'),
-    url('../fonts/Lato-Regular.woff2') format('woff2'),
-    url('../fonts/Lato-Regular.woff') format('woff'),
-    url('../fonts/Lato-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Lato";
+  src: local("Lato Regular"), local("Lato-Regular"), url("../../fonts/Lato-Regular.woff2") format("woff2"), url("../../fonts/Lato-Regular.woff") format("woff"), url("../../fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
+}
+.header__top {
+  background-color: #F4F4F4;
+  font-size: 13px;
+  padding: 5px 0;
+}
+.header__lang-switcher button,
+.header__lang-switcher .dropdown-item {
+  font-size: 13px;
+}
+.header__icons-top {
+  margin-right: 8px;
+}
+.header__search-wrapper {
+  margin-right: 60px;
+}
+.header__seacrh {
+  font-size: 16px;
+  padding-left: 0;
+  padding-right: 65px;
+}
+.header__navigation .nav-item:not(:first-child):not(:last-child) {
+  margin-right: 30px;
+}
+.header__auth {
+  gap: 16px;
 }
 
-/* ================ */
-
-
-/* Main styles for projects */
-
-/* Header */
-
-header .bg-light {
-    --bs-bg-opacity: 0;
-}
-
-header .nav-link {
-    font-size: 13px;
-    color: #17181A;
-    margin-top: 3px;
-}
-
-.header .header__list-language {
-    font-weight: 400;
-    font-size: 13px;
-    color: #17181A;
-}
-
-.header__language li {
-    margin-top: 4px;
-}
-
-header .container-xl:last-child {
-    background-color: white;
-    position: relative;
-    box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
-}
-
+/*# sourceMappingURL=stylesheet.css.map */
