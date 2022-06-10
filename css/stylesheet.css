@@ -98,6 +98,14 @@ input:focus {
   background-size: 60%;
 }
 
+.col-3 {
+  width: 20%;
+}
+
+.col-9 {
+  width: 80%;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -258,6 +266,34 @@ a:hover {
   background-color: white;
 }
 
+@media (max-width: 1200px) {
+  .wall__search-area {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  .wall__search-area {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .wall .row {
+    flex-direction: column;
+  }
+  .wall .col-3 {
+    width: 100%;
+  }
+  .wall .col-9 {
+    margin: 0 auto;
+  }
+  .wall .dropdown {
+    display: flex;
+    justify-content: center;
+  }
+  .wall__search-area {
+    width: 100%;
+  }
+}
 .general {
   background-color: #F4F4F4;
 }
@@ -298,6 +334,45 @@ a:hover {
 }
 .filter__line-divided {
   opacity: 0.1;
+}
+
+.products {
+  background-color: #F4F4F4;
+  padding-top: 16px;
+}
+.products__content-products {
+  flex-direction: column;
+  gap: 10px;
+}
+.products__line-card {
+  width: 33.3333333333%;
+  margin-bottom: 14px;
+}
+.products__card {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  border: none;
+}
+.products__card:hover {
+  color: #99C63C;
+  box-shadow: 5px 5px 10px -1px #99C63C;
+  transition: 0.5s;
+}
+.products__card:hover .card-body:hover {
+  color: #99C63C;
+}
+.products .card-body {
+  text-align: center;
+}
+.products .card-body h5 {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+@media (max-width: 1400px) {
+  .products__line-card {
+    width: 16rem;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

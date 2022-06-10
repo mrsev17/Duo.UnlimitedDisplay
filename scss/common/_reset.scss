@@ -105,6 +105,13 @@ input:focus {
   background-size: 60%;
 }
 
+.col-3 {
+  width: 20%;
+}
+.col-9 {
+  width: 80%;
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   * {

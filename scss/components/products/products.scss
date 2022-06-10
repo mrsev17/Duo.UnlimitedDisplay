@@ -1,0 +1,38 @@
+.products {
+  background-color: $main-bg;
+  padding-top: 16px;
+
+  &__content-products {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__line-card {
+    width: calc(100%/3);
+    margin-bottom: 14px;
+  }
+
+  &__card {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    border: none;
+    &:hover {
+      color: $accent-color;
+      box-shadow: 5px 5px 10px -1px $accent-color;
+      transition: .5s;
+      .card-body:hover {
+        color: $accent-color;
+      }
+    }
+  }
+
+  .card-body {
+    text-align: center;
+    h5 {
+      font-weight: $font-weight-reg;
+      font-size: 17px;
+    }
+
+  }
+
+}
