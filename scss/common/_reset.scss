@@ -85,6 +85,26 @@ input:focus {
   box-shadow: none !important;
 }
 
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  margin-top: 5px;
+  background-image: url("../../assets/icons/chevron-up.svg");
+  background-size: 60%;
+  transform: none;
+
+}
+.accordion-button::after {
+  background-size: 60%;
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   * {

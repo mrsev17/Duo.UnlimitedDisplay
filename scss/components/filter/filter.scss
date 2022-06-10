@@ -1,0 +1,28 @@
+.filter {
+  padding-top: 16px;
+  &__card {
+    border-radius: 20px;
+    border: none;
+  }
+  .accordion-item {
+    border: none;
+  }
+  .accordion-button:focus {
+    border: 0;
+  }
+  .accordion-button::after {
+
+  }
+  .card-text {
+    font-size: 12px;
+    color: #515151;
+  }
+  .card-body a {
+    font-size: 12px;
+    color: #EB5757;
+    svg {
+      margin-bottom: 5px;
+    }
+
+  }
+}
