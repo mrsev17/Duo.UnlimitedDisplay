@@ -408,12 +408,16 @@ a:hover {
   background-color: #26282C;
 }
 .footer__main-content {
-  padding-top: 48px;
+  background-color: #26282C;
+  padding: 48px 0 32px;
 }
 .footer__title {
   color: #FFFFFF;
   font-size: 17px;
   font-weight: 700;
+}
+.footer .last-word {
+  text-align: center;
 }
 .footer__mid-content {
   gap: 58px;
@@ -421,6 +425,12 @@ a:hover {
 .footer__mid-content .list-group-item {
   opacity: 0.7;
   font-size: 13px;
+}
+.footer__right-side a {
+  margin-left: 21%;
+}
+.footer__right-side label {
+  display: none;
 }
 .footer .list-group {
   margin-top: 16px;
@@ -435,7 +445,8 @@ a:hover {
   gap: 44px;
 }
 .footer__second {
-  margin-top: 16px;
+  padding: 12px 0 12px;
+  background-color: black;
 }
 .footer__location {
   gap: 10px;
@@ -472,23 +483,41 @@ a:hover {
   margin-top: 26px;
 }
 .footer__email-input {
+  margin-top: 20px;
   background-color: #26282C;
   border: 1px solid grey;
   border-radius: 20px;
-  padding: 12px 38px;
+  padding: 10px 0;
   color: white;
+  width: 80%;
+  font-size: 13px;
 }
-.footer__form-email-send input {
-  position: relative;
+.footer__email-input::placeholder {
+  text-align: center;
 }
-.footer__form-email-send input:before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 0;
-  bottom: 0;
-  width: 20px;
-  background: url("../../../assets/icons/send_24px.svg") center/contain no-repeat;
+.footer__lang-select {
+  background-color: transparent;
+  border-radius: 20px;
+  width: 80%;
+  padding: 10px 0;
+  font-size: 13px;
+}
+.footer__container-networks {
+  margin-top: 32px;
+  gap: 4px;
+}
+.footer__container-networks a {
+  margin: 0;
+}
+.footer__bottom-left {
+  gap: 10px;
+}
+.footer__trademarks {
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.footer__bottom-right {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

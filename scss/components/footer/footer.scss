@@ -1,12 +1,16 @@
 .footer {
   background-color: #26282C;
   &__main-content {
-    padding-top: 48px;
+    background-color: #26282C;
+    padding: 48px 0 32px;
   }
   &__title {
     color: #FFFFFF;
     font-size: 17px;
     font-weight: 700;
+  }
+  .last-word {
+    text-align: center;
   }
   &__mid-content {
 
@@ -16,7 +20,14 @@
       font-size: $font-sm;
     }
   }
-
+  &__right-side {
+    a {
+      margin-left: 21%;
+    }
+    label {
+      display: none;
+    }
+  }
     .list-group {
       margin-top: 16px;
       list-style: none;
@@ -32,7 +43,8 @@
 
 
   &__second {
-    margin-top: 16px;
+    padding: 12px 0 12px;
+    background-color: black;
   }
   &__location {
     gap: 10px;
@@ -71,26 +83,42 @@
   &__made-france {
     margin-top: 26px;
   }
+
   &__email-input {
+    margin-top: 20px;
     background-color: #26282C;
     border: 1px solid grey;
     border-radius: 20px;
-    padding: 12px 38px;
+    padding: 10px 0;
     color: white;
+    width: 80%;
+    font-size: $font-sm;
+    &::placeholder {
+      text-align: center;
+    }
   }
-  &__form-email-send {
-    input {
-      position: relative;
+  &__lang-select {
+    background-color: transparent;
+    border-radius: 20px;
+    width: 80%;
+    padding: 10px 0;
+    font-size: $font-sm;
+  }
+  &__container-networks {
+    margin-top: 32px;
+    gap: 4px;
+    a {
+      margin: 0;
     }
-
-    input:before {
-      content: "";
-      position: absolute;
-      left: 10px;
-      top: 0;
-      bottom: 0;
-      width: 20px;
-      background: url("../../../assets/icons/send_24px.svg") center / contain no-repeat;
-    }
+  }
+  &__bottom-left {
+    gap: 10px;
+  }
+  &__trademarks {
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+  &__bottom-right {
+    background-color: transparent;
   }
 }
