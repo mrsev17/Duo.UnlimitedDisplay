@@ -418,5 +418,77 @@ a:hover {
 .footer__mid-content {
   gap: 58px;
 }
+.footer__mid-content .list-group-item {
+  opacity: 0.7;
+  font-size: 13px;
+}
+.footer .list-group {
+  margin-top: 16px;
+  list-style: none;
+}
+.footer .list-group .list-group-item {
+  background-color: transparent;
+  color: #FFFFFf;
+  border: none;
+}
+.footer__list-content {
+  gap: 44px;
+}
+.footer__second {
+  margin-top: 16px;
+}
+.footer__location {
+  gap: 10px;
+}
+.footer__location-point {
+  margin-top: 16px;
+  gap: 16px;
+}
+.footer__location-point figure {
+  margin-top: 5px;
+}
+.footer__location-point address {
+  color: #ffffff;
+  max-width: 172px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+.footer__phone-point {
+  gap: 16px;
+}
+.footer__phone-point a {
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.footer__email-point {
+  margin-top: 16px;
+  gap: 16px;
+}
+.footer__email-point p {
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.footer__made-france {
+  margin-top: 26px;
+}
+.footer__email-input {
+  background-color: #26282C;
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 12px 38px;
+  color: white;
+}
+.footer__form-email-send input {
+  position: relative;
+}
+.footer__form-email-send input:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url("../../../assets/icons/send_24px.svg") center/contain no-repeat;
+}
 
 /*# sourceMappingURL=stylesheet.css.map */

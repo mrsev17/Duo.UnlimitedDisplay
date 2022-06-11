@@ -9,6 +9,88 @@
     font-weight: 700;
   }
   &__mid-content {
+
     gap: 58px;
+    .list-group-item {
+      opacity: 0.7;
+      font-size: $font-sm;
+    }
+  }
+
+    .list-group {
+      margin-top: 16px;
+      list-style: none;
+      .list-group-item {
+        background-color: transparent;
+        color: #FFFFFf;
+        border: none;
+      }
+    }
+  &__list-content {
+    gap: 44px;
+  }
+
+
+  &__second {
+    margin-top: 16px;
+  }
+  &__location {
+    gap: 10px;
+  }
+  &__location-point {
+    margin-top: 16px;
+    gap: 16px;
+    figure {
+      margin-top: 5px;
+    }
+    address {
+      color: #ffffff;
+      max-width: 172px;
+      font-size: $font-sm;
+      opacity: 0.7;
+    }
+  }
+
+  &__phone-point {
+    gap: 16px;
+    a {
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+  }
+
+  &__email-point {
+    margin-top: 16px;
+    gap: 16px;
+    p {
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+  }
+
+  &__made-france {
+    margin-top: 26px;
+  }
+  &__email-input {
+    background-color: #26282C;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 12px 38px;
+    color: white;
+  }
+  &__form-email-send {
+    input {
+      position: relative;
+    }
+
+    input:before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 20px;
+      background: url("../../../assets/icons/send_24px.svg") center / contain no-repeat;
+    }
   }
 }
