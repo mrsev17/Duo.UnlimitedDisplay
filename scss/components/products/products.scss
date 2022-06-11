@@ -35,4 +35,36 @@
 
   }
 
+    &__list-butt {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #E2E2E2;
+    padding: 5px 15px;
+    font-size: 17px;
+    font-weight: $font-weight-reg;
+    }
+
+    &__back-push {
+      border-radius: 20px;
+      padding: 5px 30px;
+    }
+  &__next-push {
+    border-radius: 20px;
+    padding: 5px 30px;
+    background-color: $accent-color;
+    border: none;
+  }
+  &__text-info {
+    margin: 0 14px;
+  }
+
+    &__page-select {
+      border-radius: 20px;
+      width: 14%;
+      text-align: center;
+      &::placeholder {
+        text-align: center;
+      }
+    }
+
 }

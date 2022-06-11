@@ -368,6 +368,35 @@ a:hover {
   font-weight: 700;
   font-size: 17px;
 }
+.products__list-butt {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #E2E2E2;
+  padding: 5px 15px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.products__back-push {
+  border-radius: 20px;
+  padding: 5px 30px;
+}
+.products__next-push {
+  border-radius: 20px;
+  padding: 5px 30px;
+  background-color: #99C63C;
+  border: none;
+}
+.products__text-info {
+  margin: 0 14px;
+}
+.products__page-select {
+  border-radius: 20px;
+  width: 14%;
+  text-align: center;
+}
+.products__page-select::placeholder {
+  text-align: center;
+}
 
 @media (max-width: 1400px) {
   .products__line-card {
