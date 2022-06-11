@@ -339,6 +339,7 @@ a:hover {
 .products {
   background-color: #F4F4F4;
   padding-top: 16px;
+  margin-bottom: 58px;
 }
 .products__content-products {
   flex-direction: column;
@@ -402,6 +403,20 @@ a:hover {
   .products__line-card {
     width: 16rem;
   }
+}
+.footer {
+  background-color: #26282C;
+}
+.footer__main-content {
+  padding-top: 48px;
+}
+.footer__title {
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 700;
+}
+.footer__mid-content {
+  gap: 58px;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

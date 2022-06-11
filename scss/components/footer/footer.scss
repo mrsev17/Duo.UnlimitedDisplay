@@ -1,0 +1,14 @@
+.footer {
+  background-color: #26282C;
+  &__main-content {
+    padding-top: 48px;
+  }
+  &__title {
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  &__mid-content {
+    gap: 58px;
+  }
+}
