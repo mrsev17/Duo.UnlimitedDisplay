@@ -14,16 +14,60 @@
   }
 
   &__card {
+    width: 20rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
     border: none;
+    position: relative;
+    overflow: hidden;
     &:hover {
+      /*
       color: $accent-color;
+      */
       box-shadow: 5px 5px 10px -1px $accent-color;
       transition: .5s;
+      /*
       .card-body:hover {
         color: $accent-color;
       }
+
+       */
+    }
+  }
+  &__image-card {
+    margin-left: 18px;
+    width: 100%;
+    max-width: 282px;
+    max-height: 291px;
+  }
+  &__wrapper-image-card {
+    animation-name: reverse;
+    animation-duration: 1s;
+    &:hover {
+      animation-name: myanimation ;
+      /*
+      transform: translateX(-100%);
+       */
+      transition-duration: 2s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes myanimation {
+    from {
+      transform: none;
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes reverse {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: none;
     }
   }
 

@@ -6,11 +6,38 @@
     border-radius: 30px;
     position: relative;
     overflow: hidden;
+    &:hover {
+      box-shadow: 5px 5px 10px -1px $accent-color;
+    }
   }
   &__images {
+    animation-name: reverse;
+    animation-duration: 1s;
     &:hover {
+      animation-name: myanimation ;
+      /*
       transform: translateX(-100%);
-      transition: 0.9s;
+       */
+      transition-duration: 2s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes myanimation {
+    from {
+      transform: none;
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes reverse {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: none;
     }
   }
 }

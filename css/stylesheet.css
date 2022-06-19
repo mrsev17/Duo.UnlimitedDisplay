@@ -353,17 +353,59 @@ a:hover {
   margin-bottom: 14px;
 }
 .products__card {
+  width: 20rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
   border: none;
+  position: relative;
+  overflow: hidden;
 }
 .products__card:hover {
-  color: #99C63C;
+  /*
+  color: $accent-color;
+  */
   box-shadow: 5px 5px 10px -1px #99C63C;
   transition: 0.5s;
+  /*
+  .card-body:hover {
+    color: $accent-color;
+  }
+
+   */
 }
-.products__card:hover .card-body:hover {
-  color: #99C63C;
+.products__image-card {
+  margin-left: 18px;
+  width: 100%;
+  max-width: 282px;
+  max-height: 291px;
+}
+.products__wrapper-image-card {
+  animation-name: reverse;
+  animation-duration: 1s;
+}
+.products__wrapper-image-card:hover {
+  animation-name: myanimation;
+  /*
+  transform: translateX(-100%);
+   */
+  transition-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes myanimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes reverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: none;
+  }
 }
 .products .card-body {
   text-align: center;
@@ -569,9 +611,36 @@ a:hover {
   position: relative;
   overflow: hidden;
 }
+.test__card:hover {
+  box-shadow: 5px 5px 10px -1px #99C63C;
+}
+.test__images {
+  animation-name: reverse;
+  animation-duration: 1s;
+}
 .test__images:hover {
+  animation-name: myanimation;
+  /*
   transform: translateX(-100%);
-  transition: 0.9s;
+   */
+  transition-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes myanimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes reverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: none;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
