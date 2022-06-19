@@ -297,6 +297,9 @@ a:hover {
 .general {
   background-color: #F4F4F4;
 }
+.general .filter__card {
+  width: 14rem;
+}
 
 .filter {
   padding-top: 16px;
@@ -422,6 +425,9 @@ a:hover {
 .footer__mid-content {
   gap: 58px;
 }
+.footer__mid-content .list-group > li > a {
+  color: white;
+}
 .footer__mid-content .list-group-item {
   opacity: 0.7;
   font-size: 13px;
@@ -463,6 +469,9 @@ a:hover {
   max-width: 172px;
   font-size: 13px;
   opacity: 0.7;
+}
+.footer__form-email-send input:focus {
+  padding-left: 20px;
 }
 .footer__phone-point {
   gap: 16px;
@@ -519,6 +528,9 @@ a:hover {
 .footer__bottom-right {
   background-color: transparent;
 }
+.footer__email-point #mail-link {
+  color: white !important;
+}
 
 @media (max-width: 980px) {
   .footer__gen-content {
@@ -546,6 +558,20 @@ a:hover {
   .footer__email-send {
     justify-content: center !important;
   }
+}
+.test {
+  background-color: grey;
+}
+.test__card {
+  background-color: white;
+  width: 100%;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.test__images:hover {
+  transform: translateX(-100%);
+  transition: 0.9s;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

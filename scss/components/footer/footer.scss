@@ -13,7 +13,9 @@
     text-align: center;
   }
   &__mid-content {
-
+    .list-group > li > a {
+      color: white;
+    }
     gap: 58px;
     .list-group-item {
       opacity: 0.7;
@@ -62,7 +64,13 @@
       opacity: 0.7;
     }
   }
-
+  &__form-email-send {
+    input {
+      &:focus {
+        padding-left: 20px;
+      }
+    }
+  }
   &__phone-point {
     gap: 16px;
     a {
@@ -120,5 +128,10 @@
   }
   &__bottom-right {
     background-color: transparent;
+  }
+  &__email-point  {
+    #mail-link {
+      color: white !important;
+    }
   }
 }

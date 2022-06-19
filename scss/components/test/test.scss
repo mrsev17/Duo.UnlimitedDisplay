@@ -1,0 +1,16 @@
+.test {
+  background-color: grey;
+  &__card {
+    background-color: white;
+    width: 100%;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__images {
+    &:hover {
+      transform: translateX(-100%);
+      transition: 0.9s;
+    }
+  }
+}
