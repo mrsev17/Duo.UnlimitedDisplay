@@ -24,6 +24,9 @@
 
 @media (max-width: 580px) {
   .products {
+    &__card {
+      margin: 0 auto;
+    }
     &__wrapper {
       flex-direction: column !important;
       align-items: center;
@@ -60,6 +63,14 @@
     }
     &__text-info {
       margin: 10px 0;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .products {
+    &__line-card {
+      width: 100%;
     }
   }
 }

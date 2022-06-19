@@ -296,6 +296,7 @@ a:hover {
 }
 .general {
   background-color: #F4F4F4;
+  padding: 30px 30px;
 }
 .general .filter__card {
   width: 14rem;
@@ -490,6 +491,9 @@ a:hover {
   }
 }
 @media (max-width: 580px) {
+  .products__card {
+    margin: 0 auto;
+  }
   .products__wrapper {
     flex-direction: column !important;
     align-items: center;
@@ -523,6 +527,11 @@ a:hover {
   }
   .products__text-info {
     margin: 10px 0;
+  }
+}
+@media (max-width: 380px) {
+  .products__line-card {
+    width: 100%;
   }
 }
 .footer {
@@ -675,6 +684,12 @@ a:hover {
   }
   .footer__email-send {
     justify-content: center !important;
+  }
+}
+@media (max-width: 520px) {
+  .footer__mid-content {
+    gap: 30px;
+    flex-wrap: wrap;
   }
 }
 

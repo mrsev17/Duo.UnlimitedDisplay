@@ -27,6 +27,14 @@
     &__email-send {
       justify-content: center !important;
     }
+  }
+}
 
+@media (max-width: 520px) {
+  .footer {
+    &__mid-content {
+      gap: 30px;
+      flex-wrap: wrap;
+    }
   }
 }
