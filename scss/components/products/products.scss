@@ -35,7 +35,7 @@
     }
   }
   &__image-card {
-    margin-left: 18px;
+    margin-left: 24px;
     width: 100%;
     max-width: 282px;
     max-height: 291px;
@@ -48,7 +48,7 @@
       /*
       transform: translateX(-100%);
        */
-      transition-duration: 2s;
+      transition-duration: 1s;
       animation-fill-mode: forwards;
     }
   }
